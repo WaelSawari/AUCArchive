@@ -40,13 +40,48 @@ This chatbot uses the CONTENTdm API to provide natural language access to the ar
 
 ## Usage
 
+### Search Functionality
+
+The chatbot offers powerful search capabilities that allow you to explore the AUC Digital Archive using natural language queries. Here's how to use the search features:
+
+#### Basic Search
+- Use the `search` command followed by your query terms to search across all collections
+- Example: `search ancient egypt`
+
+#### Collection-Specific Search
+- To search within a specific collection, use the `search in` syntax
+- Example: `search ancient egypt in photos`
+- You can use either the collection name or its alias (in parentheses) when searching
+
+#### Search Tips
+1. **Natural Language Support**
+   - Ask questions in plain English
+   - The chatbot understands context and relationships between terms
+   - Example: "Show me photos of ancient Egyptian architecture"
+
+2. **Collection Navigation**
+   - Use `list collections` to see all available collections
+   - Each collection has a unique alias (shown in parentheses) that can be used in searches
+   - Example: `list collections` will show you all available collections and their aliases
+
+3. **Item Details**
+   - Once you find an item you're interested in, use the `item` command to get more details
+   - Format: `item [collection] [id]`
+   - Example: `item photos 1234`
+
+4. **Best Practices**
+   - Start with general terms and refine your search
+   - Use collection-specific searches for more targeted results
+   - Check the collection aliases when searching specific collections
+   - Use quotes for exact phrase matching
+
 ### Available Commands
 
-- `list collections` - Show all available collections
+- `list collections` - Show all available collections and their aliases
 - `browse [collection]` - Browse items in a collection
 - `search [terms]` - Search across all collections
 - `search [terms] in [collection]` - Search within specific collection
-- `item [collection] [id]` - Get details for specific item
+- `item [collection] [id]` - Get detailed metadata for specific item
 - `help` - Show help message
 - `quit` - Exit the chatbot
 
